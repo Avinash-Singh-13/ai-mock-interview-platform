@@ -464,35 +464,7 @@ Landing page must include:
 - CTA buttons
 - testimonials/stats
 - footer
-## Performance Requirements
 
-Optimize:
-
-- frontend rendering performance
-- Socket.io communication
-- Monaco editor synchronization
-- API handling
-- dashboard rendering
-- state management
-
-Use:
-
-1. lazy loading
-2. dynamic imports
-3. debounced synchronization
-4. optimized React rendering
-5. efficient state updates
-## Accessibility Requirements
-
-Support:
-
-1. semantic HTML
-2. keyboard navigation
-3. accessible forms
-4. ARIA labels
-5. focus management
-6. accessible contrast ratios
-7. responsive layouts
 ## Deployment Requirements
 
 The application must support:
@@ -551,21 +523,7 @@ The implementation MUST:
 8. implement AI fallback responses
 9. generate runnable code
 
-The implementation MUST NOT use:
 
-- Firebase
-- Redux
-- Kubernetes
-- microservices
-- Redis
-
-Do NOT:
-
-- skip implementation
-- use TODO placeholders
-- provide pseudocode only
-- omit imports
-- generate partial snippets only
 ## Output Format Requirements
 
 Generate BOTH:
