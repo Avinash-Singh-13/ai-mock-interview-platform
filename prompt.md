@@ -1,6 +1,5 @@
 # Build a Production-Grade AI Mock Interview Platform
 
-## Who this is for
 
 I'm a senior full stack engineer building a modern AI-powered mock technical interview platform designed to simulate realistic software engineering interviews at scale.
 
@@ -59,13 +58,14 @@ The technology stack is predefined and must not be changed.
 
 Use:
 
-- Next.js 14 App Router
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Zustand
-- Monaco Editor
-- Socket.io Client
+- Next.js 14 App Router -> To provide scalable routing and modern full-stack React architecture.
+- TypeScript -> To add static typing for better scalability, maintainability, and error prevention.
+- Tailwind CSS -> To enable fast, responsive, and consistent UI development with utility-first styling.
+- Framer Motion ->To add smooth animations and improve modern UI interactions.
+- Zustand -> To manage lightweight and scalable global application state.
+- Monaco Editor -> To provide a real-time collaborative coding environment.
+- Socket.io Client -> To enable real-time communication and synchronization between users.
+
 
 The frontend is responsible for:
 
@@ -88,12 +88,13 @@ The UI should feel like a modern SaaS engineering platform with responsive layou
 
 Use:
 
-- Node.js
-- Express.js or custom Next.js server
-- Socket.io
-- JWT Authentication
-- bcrypt
-- dotenv
+- Node.js -> To build scalable and efficient backend services.
+- Express.js or custom Next.js server -> To manage APIs, middleware, and backend request handling.
+- Socket.io -> To enable real-time communication and collaborative synchronization.
+- JWT Authentication -> To implement secure authentication and session management.
+- bcrypt -> To securely hash and protect user passwords.
+- dotenv -> To manage environment variables securely across environments.
+
 
 The backend must handle:
 
@@ -125,8 +126,8 @@ The backend architecture must separate:
 
 Use:
 
-- MongoDB
-- Mongoose
+- MongoDB -> To store scalable and flexible application data efficiently.
+- Mongoose -> To manage MongoDB schemas, models, and database operations cleanly.
 
 MongoDB must persist:
 
@@ -147,7 +148,8 @@ Schema design must remain scalable, maintainable, and production-ready using pro
 
 Use:
 
-- OpenAI API
+- OpenAI API (`gpt-4.1` or `gpt-4o`) -> To generate coding questions, interview feedback, and AI-based evaluations efficiently.
+
 
 The AI integration layer must support:
 
@@ -167,8 +169,9 @@ If the `OPENAI_API_KEY` is unavailable, the system must automatically return fal
 
 Use:
 
-- Socket.io
-- WebRTC
+- Socket.io -> To enable real-time synchronization and collaborative communication.
+- WebRTC -> To support low-latency peer-to-peer audio and video communication.
+
 
 Socket.io must handle:
 
@@ -333,13 +336,14 @@ Authentication middleware must protect dashboard and interview routes from unaut
 
 Implement a collaborative Monaco editor with:
 
-1. real-time synchronization
-2. shared editing
-3. syntax highlighting
-4. multi-language support
-5. reconnect handling
-6. collaborative coding sessions
-7. room-based synchronization
+- Real-time synchronization -> To keep code updates instantly synced between participants.
+- Shared editing -> To allow multiple users to collaborate in the same editor session.
+- Syntax highlighting -> To improve code readability and developer experience.
+- Multi-language support -> To support interviews across different programming languages.
+- Reconnect handling -> To restore sessions smoothly after connection interruptions.
+- Collaborative coding sessions -> To simulate realistic live technical interviews.
+- Room-based synchronization -> To isolate and manage interview sessions securely.
+
 
 The editor must synchronize updates using Socket.io without causing UI lag or state conflicts.
 
