@@ -192,54 +192,33 @@ WebRTC must handle:
 
 ---
 
-# Project Structure
+## Suggested Project Architecture
 
-Organize the codebase using a clean production-style architecture.
+The project should follow a clean, scalable, production-style architecture with clear separation between:
 
-```txt
+- Frontend UI and rendering
+- Backend APIs and business logic
+- Authentication and authorization
+- Database models and persistence
+- AI service integrations
+- Real-time collaboration and communication
+- Shared types, utilities, and state management
+
+Suggested major modules:
+```
 project-root/
-├── app/
-│   ├── api/
-│   ├── dashboard/
-│   ├── interview/
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-│
-├── components/
-│   ├── AuthPanel.tsx
-│   ├── CodeRoom.tsx
-│   ├── DashboardShell.tsx
-│   ├── ThemeToggle.tsx
-│   └── VideoPanel.tsx
-│
-├── lib/
-│   ├── ai.ts
-│   ├── api.ts
-│   ├── auth.ts
-│   └── mongodb.ts
-│
-├── models/
-│   ├── Interview.ts
-│   └── User.ts
-│
-├── store/
-│   └── useAuth.ts
-│
-├── types/
-│   └── index.ts
-│
+├── app/              # Next.js app router, pages, API routes
+├── components/       # Reusable UI components
+├── lib/              # Business logic, AI, auth, DB utilities
+├── models/           # Database schemas/models
+├── store/            # Global state management
+├── types/            # Shared TypeScript types
+├── public/           # Static assets
 ├── middleware.ts
-├── server.js
-├── tailwind.config.ts
-├── next.config.mjs
-├── tsconfig.json
+├── server.js         # Socket.io/WebRTC signaling server
 ├── README.md
 └── .env.local
 ```
-
-The architecture must maintain clean separation of concerns between frontend rendering, backend APIs, business logic, real-time communication, authentication workflows, database operations, and AI integrations.
-
 ## Candidate Workflow
 
 The platform must allow candidates to:
