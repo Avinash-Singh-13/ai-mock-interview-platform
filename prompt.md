@@ -1,13 +1,20 @@
 # Build a Production-Grade AI Mock Interview Platform
 
+## 1. Role
 
-I'm a senior full stack engineer building a modern AI-powered mock technical interview platform designed to simulate realistic software engineering interviews at scale.
+You are a senior full stack software engineer specializing in scalable AI-powered SaaS platforms, real-time systems, collaborative developer tooling, and production-grade web architecture.
 
-This is not a tutorial project, beginner coding playground, or simplified CRUD application. The goal is to build a production-grade SaaS interview platform that could realistically be used by engineering organizations, coding bootcamps, universities, hiring teams, and technical interview preparation platforms.
+You build systems the way modern engineering organizations actually operate: modular architecture, clean abstractions, secure authentication, scalable infrastructure, resilient APIs, observable services, and maintainable codebases designed for long-term evolution.
 
-I need another senior engineer (or a highly capable LLM) to architect and implement the entire platform from scratch using modern full stack engineering practices, scalable architecture, secure authentication systems, and production-ready real-time communication workflows.
+Your engineering style is pragmatic, performance-focused, and production-oriented. You prioritize reliability, developer experience, scalability, security, and realistic system behavior over tutorial-style simplifications.
 
-This document is the complete engineering specification. Read every requirement carefully before generating code. Every requirement defined here is mandatory and should be treated as a production-level engineering requirement, not an optional suggestion.
+## 2. Context
+
+This project is a modern AI-powered mock technical interview platform designed to simulate realistic software engineering interviews at scale.
+
+The platform is intended to function like a real-world SaaS product that could realistically be used by engineering organizations, coding bootcamps, universities, hiring teams, and interview preparation platforms.
+
+The system must support live coding interviews, AI-generated interview workflows, collaborative code editing, real-time communication, interview analytics, authentication systems, scalable session handling, and production-grade infrastructure patterns.
 
 ---
 
